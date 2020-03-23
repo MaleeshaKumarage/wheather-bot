@@ -1,0 +1,35 @@
+<div id="center-text">
+    <h2>ChatBox UI</h2>
+    <p>Message send and scroll to bottom enabled </p>
+</div>
+<div id="body">
+
+<div id="chat-circle" class="btn btn-raised">
+  <div id="chat-overlay"></div>
+    <i class="fa fa-question-circle fa-3x"></i>
+  </div>
+
+  <div class="chat-box">
+    <head>
+      <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+    </head>
+    <body>
+      <div class="chat-container"></div>
+
+      <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"></script>
+      <script type="text/javascript">
+        var chatroom = new window.Chatroom({
+          host: "http://localhost:5005",
+          title: "Dasha",
+          container: document.querySelector(".chat-container"),
+          welcomeMessage: "Hi, I am Dasha. How may I help you? I am currently trained for weather information. You can ask me weather for any location.",
+          speechRecognition: "en-US",
+          voiceLang: "en-US"
+        });
+        chatroom.openChat();
+      </script>
+    </body>
+
+    </div>
+  </div>
+</div>
